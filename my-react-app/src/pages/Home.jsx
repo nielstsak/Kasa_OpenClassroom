@@ -1,13 +1,21 @@
-import React from "react"
-import styles from "./Home.module.css" 
+import { useState, useEffect } from "react"
+import Banner from "../Components/Banner"
+import Cards from "../components/Cards"
 
-function Home() {
+export default function Home() {
+  const [properties, setProperties] = useState([])
+
+  useEffect(() => {
+    fetch("http://localhost:8080/api/properties")
+      .then((res) => res.json())
+      .then((data) => setProperties(data))
+      .catch((err) => console.error(err))
+  }, [])
+
   return (
-    <main className={styles.home}>
-      <h1>Accueil</h1>
-      <p>Contenu de la page d’accueil</p>
+    <main>
+      <Banner />
+      <Cards properties={properties} />
     </main>
   )
 }
-
-export default Home

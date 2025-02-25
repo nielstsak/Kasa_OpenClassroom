@@ -1,9 +1,10 @@
+import styles from "./Banner.module.css"
+
 export default function Banner() {
-	return (
-		<div className="banner-container">
-			<div className="banner-text-container">
-				<div className="banner-text">Chez vous, partout et ailleurs</div>
-			</div>
-		</div>
-	);
+  return (
+    <section className={styles.banner}>
+      <div className={styles.overlay}></div>
+      <h1 className={styles.title}>Chez vous, partout et ailleurs</h1>
+    </section>
+  )
 }

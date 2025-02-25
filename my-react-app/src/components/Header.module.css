@@ -1,7 +1,33 @@
 .header {
-    width: 100%;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
   }
+  
+  .container {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 1rem 1rem; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+  }
+  
   .logo {
     height: 60px;
+  }
+  
+  .nav {
+    display: flex;
+    gap: 1.5rem; 
+  }
+  
+  .nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+  }
+  
+  .nav a:hover {
+    text-decoration: underline;
   }
   

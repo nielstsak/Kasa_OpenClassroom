@@ -1,0 +1,34 @@
+.grid {
+    max-width: 80%;
+    margin: 0 auto;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+  
+  .card {
+    position: relative;
+    background: #ff6060;
+    border-radius: 10px;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .image {
+    width: 100%;
+    height: 75%;
+    object-fit: cover;
+    display: block;
+    pointer-events: none;
+  }
+  
+  .title {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    color: #fff;
+    font-size: 1rem;
+    max-width: 80%;
+  }
+  
