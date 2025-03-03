@@ -1,13 +1,20 @@
+// my-react-app/src/components/Cards.jsx
+import React from "react"
+import { Link } from "react-router-dom"
+import Card from "./Card"
 import styles from "./Cards.module.css"
 
 export default function Cards({ properties }) {
   return (
-    <section className={styles.grid}>
-      {properties.map((item) => (
-        <article key={item.id} className={styles.card}>
-          <img src={item.cover} alt={item.title} className={styles.image} />
-          <h2 className={styles.title}>{item.title}</h2>
-        </article>
+    <section className={styles.cardsContainer}>
+      {properties.map((property) => (
+        <Link
+          key={property.id}
+          to={`/logement/${property.id}`}
+          className={styles.link}
+        >
+          <Card cover={property.cover} title={property.title} />
+        </Link>
       ))}
     </section>
   )
