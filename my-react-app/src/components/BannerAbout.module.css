@@ -23,4 +23,15 @@
     color: #fff;
     font-size: 2rem;
   }
-  
+  /* Responsive */
+@media screen and (max-width: 768px) {
+  .bannerAbout {
+    height: 180px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .bannerAbout {
+    height: 150px;
+  }
+}

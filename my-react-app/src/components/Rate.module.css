@@ -1,0 +1,14 @@
+/* my-react-app/src/components/Rate.module.css */
+
+.starsContainer {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+  }
+  
+  .star {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+  }
+  

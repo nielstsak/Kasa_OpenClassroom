@@ -1,0 +1,11 @@
+/* my-react-app/src/components/Tag.module.css */
+.tag {
+    display: inline-block;
+    background-color: #ff6060;
+    color: #fff;
+    padding: 0.3rem 1rem;
+    border-radius: 8px;
+    margin-right: 0.5rem;
+    font-size: 0.6rem;
+  }
+  

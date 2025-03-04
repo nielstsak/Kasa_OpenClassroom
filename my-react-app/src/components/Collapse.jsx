@@ -10,6 +10,7 @@ export default function Collapse({ title, content }) {
     setIsOpen(!isOpen)
   }
 
+  // On traite la prop content (string ou array)
   const lines = Array.isArray(content) ? content : [content]
 
   return (
@@ -24,20 +25,33 @@ export default function Collapse({ title, content }) {
       </div>
 
       <div className={`${styles.content} ${isOpen ? styles.contentOpen : ""}`}>
-        {isOpen &&
-          lines.map((line, index) => (
-            <p key={index} className={styles.line}>
-              {Array.from(line).map((char, i) => (
-                <span
-                  key={i}
-                  className={styles.char}
-                  style={{ animationDelay: `${i * 0.01}s` }}
-                >
-                  {char === " " ? "\u00A0" : char}
-                </span>
-              ))}
-            </p>
-          ))}
+        {isOpen && 
+          lines.map((line, lineIndex) => {
+            // On découpe chaque ligne en mots
+            const words = line.split(" ")
+
+            return (
+              <p key={lineIndex} className={styles.line}>
+                {words.map((word, wIndex) => (
+                  <span key={wIndex} className={styles.wordWrapper}>
+                    {Array.from(word).map((char, cIndex) => (
+                      <span
+                        key={cIndex}
+                        className={styles.char}
+                        style={{ animationDelay: `${(wIndex * 50 + cIndex) * 0.5}ms` }}
+                      >
+                        {char}
+                      </span>
+                    ))}
+                    {wIndex < words.length - 1 && (
+                      <span className={styles.char}>&nbsp;</span>
+                    )}
+                  </span>
+                ))}
+              </p>
+            )
+          })
+        }
       </div>
     </div>
   )
