@@ -22,15 +22,20 @@
     position: relative;
     color: #fff;
     font-size: 2rem;
+    font-weight: bold;
   }
   @media screen and (max-width: 768px) {
     .banner {
-      height: 45%;
+      height: 100px;
+    }
+    .title{
+      font-size: 1.5rem;
     }
   }
   
   @media screen and (max-width: 480px) {
-    .about {
-      padding: 0.5rem;
-    }
+
+  .title{
+    font-size: 1.3rem;
+  }
   }

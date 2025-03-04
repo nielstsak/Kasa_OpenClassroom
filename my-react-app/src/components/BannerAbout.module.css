@@ -22,16 +22,17 @@
     position: relative;
     color: #fff;
     font-size: 2rem;
+    
   }
   /* Responsive */
 @media screen and (max-width: 768px) {
   .bannerAbout {
-    height: 180px;
+    height: 60%;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .bannerAbout {
-    height: 150px;
+  .banner {
+    height: 100px;
   }
 }
