@@ -1,19 +1,20 @@
 /* my-react-app/src/components/Footer.module.css */
 
 .footer {
-  width: 100%;
+  width: 100vw;
   background-color: #000;
   color: #fff;
   text-align: center;
   padding: 1rem 0;
+  height: 150px;
+  margin-left: calc(-50vw + 50%);
 }
 
 .footer p {
-  margin: 0;
+  margin: 25px;
   font-size: 1rem;
 }
 
-/* Responsive */
 @media screen and (max-width: 768px) {
   .footer p {
     font-size: 0.9rem;
