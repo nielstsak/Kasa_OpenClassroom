@@ -10,7 +10,6 @@ export default function Collapse({ title, content }) {
     setIsOpen(!isOpen)
   }
 
-  // On traite la prop content (string ou array)
   const lines = Array.isArray(content) ? content : [content]
 
   return (
@@ -27,7 +26,6 @@ export default function Collapse({ title, content }) {
       <div className={`${styles.content} ${isOpen ? styles.contentOpen : ""}`}>
         {isOpen && 
           lines.map((line, lineIndex) => {
-            // On découpe chaque ligne en mots
             const words = line.split(" ")
 
             return (
