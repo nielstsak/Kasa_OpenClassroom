@@ -1,5 +1,21 @@
 /* index.css global reset et configuration minimale */
 
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./assets/Montserrat-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./assets/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -16,4 +32,11 @@ body {
   flex-direction: column;
   min-height: 100vh;
   background-color: #fff;
+}
+
+@media screen and (max-width: 480px) {
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
 }

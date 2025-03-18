@@ -48,17 +48,24 @@ export default function Logement() {
           </div>
         </div>
         <div className={styles.rightBlock}>
-          <div className={styles.host}>
-            <span>{firstName}</span>
-            <span>{lastName}</span>
+          <div className={styles.topRow}>
+            <div className={styles.hostNameBlock}>
+              <span>{firstName}</span>
+              <span>{lastName}</span>
+            </div>
+            <div className={styles.hostPictureBlock}>
+              <img
+                src={property.host.picture}
+                alt={property.host.name}
+                className={styles.hostPicture}
+              />
+            </div>
           </div>
-          <img
-            src={property.host.picture}
-            alt={property.host.name}
-            className={styles.hostPicture}
-          />
-          <Rate rating={property.rating} />
+          <div className={styles.ratingBlock}>
+            <Rate rating={property.rating} />
+          </div>
         </div>
+
       </section>
       <section className={styles.collapseSection}>
         <div className={styles.collapseWrapper}>

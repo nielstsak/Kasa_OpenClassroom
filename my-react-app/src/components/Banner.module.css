@@ -24,6 +24,14 @@
     font-size: 2rem;
     font-weight: bold;
   }
+
+  .title_mobile {
+    position: relative;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    display: none;
+  }
   @media screen and (max-width: 768px) {
     .banner {
       height: 100px;
@@ -36,6 +44,15 @@
   @media screen and (max-width: 480px) {
 
   .title{
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+    display : none;
+  }
+  .title_mobile {
+    position: relative;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    display: block;
+    font-size: 1.5rem;  
   }
   }

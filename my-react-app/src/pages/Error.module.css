@@ -16,12 +16,12 @@
 .errorText {
   font-size: 1.2rem;
   margin-bottom: 2rem;
-  color: #000;
+  color: #ff6060;
 }
 
 .errorLink {
   font-size: 1rem;
-  color: #ff6060;
+  color: #000000;
   text-decoration: none;
   border: 1px solid #ff6060;
   padding: 0.5rem 1rem;

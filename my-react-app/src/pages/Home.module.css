@@ -14,5 +14,12 @@
   @media screen and (max-width: 480px) {
     .cardsContainer {
       grid-template-columns: 1fr;
+    
+    }
+    .home {
+      margin: 10px ;
+      max-width: 768px;
+      padding: 0;
+      
     }
   }
