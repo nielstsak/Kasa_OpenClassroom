@@ -42,7 +42,10 @@
   }
   
   @media screen and (max-width: 480px) {
-
+    
+    .banner {
+      height: 100px;
+    }
   .title{
     font-size: 1.5rem;
     display : none;

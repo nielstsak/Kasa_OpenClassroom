@@ -1,12 +1,7 @@
 .collapse {
-  width: 100%;
-  margin-bottom: 1rem;
-}
-
-.collapseContainer {
-  width: 100%;
-  background-color: #ff6060;
+  color: #fff;
   border-radius: 10px;
+  margin-bottom: 1rem;
   overflow: hidden;
 }
 
@@ -14,9 +9,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: #fff;
   cursor: pointer;
   padding: 1rem;
+  background: #ff6060;
+  border-radius: 10px;
 }
 
 .title {
@@ -58,4 +54,10 @@
   .title {
     font-size: 0.9rem;
   }
+}
+.line {
+  margin: 0.5rem 0;
+  line-height: 1.6;
+  display: flex;
+  flex-wrap: wrap;
 }
