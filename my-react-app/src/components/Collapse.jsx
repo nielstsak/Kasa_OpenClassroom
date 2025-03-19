@@ -1,16 +1,14 @@
-// src/components/Collapse.jsx
 import { useState } from "react"
 import fleche from "../assets/fleche_collapse.svg"
 import styles from "./Collapse.module.css"
 
 export default function Collapse({ title, content }) {
   const [isOpen, setIsOpen] = useState(false)
+  const lines = Array.isArray(content) ? content : [content]
 
   function toggle() {
     setIsOpen(!isOpen)
   }
-
-  const lines = Array.isArray(content) ? content : [content]
 
   return (
     <div className={styles.collapse}>
@@ -22,12 +20,10 @@ export default function Collapse({ title, content }) {
           className={`${styles.arrow} ${isOpen ? styles.arrowOpen : ""}`}
         />
       </div>
-
       <div className={`${styles.content} ${isOpen ? styles.contentOpen : ""}`}>
-        {isOpen && 
+        {isOpen &&
           lines.map((line, lineIndex) => {
             const words = line.split(" ")
-
             return (
               <p key={lineIndex} className={styles.line}>
                 {words.map((word, wIndex) => (
@@ -41,15 +37,12 @@ export default function Collapse({ title, content }) {
                         {char}
                       </span>
                     ))}
-                    {wIndex < words.length - 1 && (
-                      <span className={styles.char}>&nbsp;</span>
-                    )}
+                    {wIndex < words.length - 1 && <span className={styles.char}>&nbsp;</span>}
                   </span>
                 ))}
               </p>
             )
-          })
-        }
+          })}
       </div>
     </div>
   )
