@@ -58,6 +58,7 @@
   flex-direction: column;
   color: #ff6060;
   margin-right: 0.5rem;
+  text-align: right;
 }
 
 .hostPictureBlock {
@@ -106,6 +107,7 @@
     justify-content: space-between;
     align-items:center ;
     padding-left: 25px;
+    text-align: right;
   }
 
   .collapseSection {

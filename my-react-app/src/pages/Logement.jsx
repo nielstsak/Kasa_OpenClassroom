@@ -31,8 +31,8 @@ export default function Logement() {
   }
 
   const hostNameParts = property.host.name.split(" ")
-  const firstName = hostNameParts[0] || ""
-  const lastName = hostNameParts.slice(1).join(" ")
+  const firstName = hostNameParts[0] 
+  const lastName = hostNameParts.slice(1)
 
   return (
     <main className={styles.logement}>

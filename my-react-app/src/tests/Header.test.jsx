@@ -22,7 +22,6 @@ describe('Header component', () => {
       </MemoryRouter>
     )
     const homeLink = screen.getByText('Accueil')
-    // Vérifie que le lien "Accueil" possède la classe active via le callback de NavLink.
     expect(homeLink.className).toMatch(/active/)
   })
 
