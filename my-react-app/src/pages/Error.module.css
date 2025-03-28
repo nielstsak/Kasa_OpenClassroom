@@ -1,10 +1,8 @@
-/* my-react-app/src/pages/Error.module.css */
-
 .errorPage {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 3rem ;
+  margin: 3rem;
   text-align: center;
 }
 
@@ -20,16 +18,12 @@
 }
 
 .errorLink {
+  margin-top: 5rem;
   font-size: 1rem;
   color: #000000;
-  text-decoration: none;
-  border: 1px solid #ff6060;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-.errorLink:hover {
-  background-color: #ff6060;
-  color: #fff;
+  text-decoration: underline;
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
 }
